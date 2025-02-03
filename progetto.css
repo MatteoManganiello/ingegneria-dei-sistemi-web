@@ -1,0 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+.container-fluid {
+    background-color: #f86106; 
+    padding: 2vw; 
+}
+
+
+
+h1 {
+    font-family: 'Luckiest Guy', cursive; 
+    font-size: 4rem;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgb(241, 231, 231); 
+    text-shadow: 
+        0 0 5px #87CEEB, 
+        0 0 10px #87CEEB, 
+        0 0 20px #87CEEB, 
+        0 0 30px #87CEEB, 
+        0 0 40px #87CEEB; 
+    animation: neon-glow 1.5s infinite alternate, floating 3s ease-in-out infinite, fadeIn 2s ease-in-out;
+}
+
+/* Effetto neon pulsante */
+@keyframes neon-glow {
+    0% {
+        text-shadow: 
+            0 0 5px #87CEEB, 
+            0 0 10px #87CEEB, 
+            0 0 20px #87CEEB, 
+            0 0 30px #87CEEB;
+    }
+    100% {
+        text-shadow: 
+            0 0 10px #87CEEB, 
+            0 0 20px #87CEEB, 
+            0 0 30px #87CEEB, 
+            0 0 40px #87CEEB;
+    }
+}
+
+/* Effetto fluttuante per movimento leggero */
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-5px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+h1::after {
+    content: "🍔"; 
+    font-size: 1.5rem;
+    display: inline-block;
+    animation: sparkle 1.5s infinite alternate ease-in-out;
+}
+
+@keyframes sparkle {
+    0% {
+        opacity: 0.5;
+        transform: rotate(0deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(10deg) scale(1.2);
+    }
+}
+
+/* Stile per l'icona del panino */
+.burger-icon {
+    font-size: 3rem;
+    animation: spin-burger 2s infinite linear;
+}
+
+
+@keyframes spin-burger {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+/* Stile per la classe `.display-4` (testo prominente) */
+.display-4 {
+    margin: 4vw 10vw; 
+    font-size: 3vw; 
+    text-align: center; 
+}
+
+/* Stile per il testo con la classe `.text-primary` */
+.text-primary {
+    font-weight: bold; 
+    font-size: 8vw; 
+    color: #f86106 !important; 
+    text-align: center; 
+    text-transform: uppercase; 
+}
+
+/* Stile per un contenitore con sfondo personalizzato */
+.text-container-bg {
+    background-color: #f86106; 
+    padding: 2vw; 
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Stile per le card */
+.card {
+    width: calc(100% - 2rem); 
+    max-width: 22rem; 
+    display: inline-block; 
+    margin: 2vw 1vw; 
+    background-color: #DEE1E6; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2); 
+}
+
+/* Stile per il titolo delle card */
+.card-title {
+    font-size: 1.5rem; 
+    color: #f86106; 
+    text-align: center; 
+    margin-bottom: 1rem; 
+}
+
+/* Stile per immagini grandi */
+.large-image {
+    width: 100%; 
+    max-width: 800px; 
+    height: auto;
+    border-radius: 10px; 
+}
+
+/* Stile per il footer */
+footer {
+    margin-top: 5vw; 
+    background-color: #f86106; 
+    padding: 2vw; 
+    text-align: center; 
+    color: #fff; 
+    font-size: 1rem; 
+    border-top: 5px solid #fff; 
+}
+
+/* Stili media query per una maggiore responsività */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 8vw; 
+    }
+
+    .display-4 {
+        margin: 2vw; 
+
+    .card {
+        width: 90%; 
+        margin: 5vw auto; 
+    }
+
+    .card-title {
+        font-size: 1.2rem; 
+    }
+
+    .large-image {
+        width: 100%; 
+        height: auto; 
+    }
+}
+
+@media (max-width: 576px) {
+    .text-primary {
+        font-size: 6vw; 
+    }
+
+    .display-4 {
+        font-size: 4vw; 
+    }
+
+    footer {
+        font-size: 0.9rem; 
+    }
+}
+}

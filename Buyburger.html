@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="it"> <!-- Dichiarazione del linguaggio della pagina: Italiano -->
+<head>
+    <!-- Definizione della codifica dei caratteri e configurazioni di compatibilità -->
+    <meta charset="UTF-8" /> <!-- Specifica la codifica UTF-8 per supportare caratteri speciali -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" /> <!-- Ottimizzazione per Internet Explorer -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+     <!-- Responsività sui dispositivi mobili -->
+
+    <!-- Titolo della pagina -->
+    <title>BuyBurger</title>
+
+    <!-- Collegamento al framework CSS di Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+    <!-- Collegamento al foglio di stile personalizzato -->
+    <link rel="stylesheet" href="progetto.css">
+</head>
+<body>
+    <div id="vueApp">
+        <!-- Header della pagina -->
+        <header class="container-fluid text-white py-2"> <!-- Intestazione a tutta larghezza con sfondo bianco -->
+            <div class="d-flex justify-content-between align-items-center"> <!-- Layout flessibile per allineare gli elementi -->
+                <h1 class="text-center">BuyBurger</h1> <!-- Titolo del sito -->
+
+                <!-- Raggruppamento del menu e del bottone per allinearli meglio -->
+                <div class="d-flex align-items-center">
+                    <nav class="dropdown custom-dropdown">
+                        <button class="btn btn-outline-light dropdown-toggle mx-1" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                            Menu 🔍
+                        </button>
+                        <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdownMenuButton">
+                            <router-link to="/Compra" class="dropdown-item">Compra 🛒</router-link>
+                            <router-link to="/Recensioni" class="dropdown-item">Recensioni ✒️</router-link>
+                            <router-link to="/Scopri" class="dropdown-item">Scopri di più ❓</router-link>
+                            <router-link to="/ClassificaPanini" class="dropdown-item">Classifica Panini 🏆</router-link>
+                            <router-link to="/CreaPanino" class="dropdown-item">Crea il tuo panino 🍔</router-link>
+                            <router-link to="/" class="dropdown-item">Home 🏠</router-link>
+                        </div>
+                    </nav>
+                    <router-link to="/Login" class="btn btn-warning mx-1">Login</router-link>
+                    <router-link to="/Register" class="btn btn-warning mx-1">Registrati</router-link>
+                </div>
+            </div>
+        </header>
+
+        <!-- Contenuto principale -->
+        <div class="container">
+            <nav class="text-center my-4">
+                <ul class="list-unstyled"> 
+                    <li>
+                        <p class="display-4 mb-0">
+                            <span class="text-primary">BuyBurger</span> Crea il tuo momento di gusto
+                        </p>
+                        <p class="text-muted h5 mt-1">(hamburger artigianali, freschi e irresistibili, a portata di clic!)</p>  
+                    </li>
+                </ul>    
+            </nav>
+        </div>
+    
+        <!-- Area di visualizzazione per le route di Vue Router -->
+        <router-view></router-view>
+    </div>
+
+    <!-- Footer della pagina -->
+    <footer class="container-fluid text-white py-3 text-center"> <!-- Sezione footer a tutta larghezza -->
+        <p class="mb-0 h5">&copy; 2025 BuyBurger. Tutti i diritti riservati.</p>
+    </footer>
+
+
+    <!-- Collegamenti agli script di Vue.js e Vue Router -->
+    
+    
+
+    <!-- Script necessari per il funzionamento del dropdown -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://unpkg.com/vue@3"></script> <!-- Framework Vue.js -->
+    <script src="https://unpkg.com/vue-router@4"></script>
+    <script src="progetto.js"></script>
+
+    
+</body>
+</html>
