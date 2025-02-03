@@ -137,17 +137,17 @@ const Login = {
           {
             image: "./immagini/BUYBurger.png",
             text: "\uD83C\uDF54Scopri tutto ciò che abbiamo da offrire.\uD83C\uDF54",
-            alt: "Logo di BUYBurger con sfondo colorato",
+            alt: "",
           },
           {
             image: "./immagini/varietà.png",
             text: "\uD83C\uDF54Trova il panino perfetto che soddisfa i tuoi gusti.\uD83C\uDF54",
-            alt: "Una varietà di panini su un tavolo",
+            alt: "",
           },
           {
             image: "./immagini/uomoBuyBurger.png",
             text: "\uD83C\uDF54Concediti il ​​piacere unico dei nostri panini.\uD83C\uDF54",
-            alt: "Un uomo che gusta un panino di BUYBurger",
+            alt: "",
           }
         ]
       };
@@ -277,7 +277,7 @@ const Login = {
           style="border: 1px solid #ccc; border-radius: 8px; margin-bottom: 20px; padding: 15px; display: flex; align-items: center;">
           <img 
             :src="item.image" 
-            :alt="'Immagine di ' + item.name" 
+            :alt="" 
             style="width: 100px; height: 100px; object-fit: cover; border-radius: 50%; margin-right: 15px;">
           <div>
             <h3 style="margin: 0 0 10px;">{{ item.name }}</h3>
@@ -481,32 +481,32 @@ const Login = {
           {
             image: "./immagini/online.jpg",
             text: "Cerchi il burger perfetto? 🍔 Scopri il nostro sito per i migliori burger, ingredienti freschi e sapori unici che soddisfano ogni palato! 🌟 Visita BuyBurger e lascia che il gusto parli da sé!",
-            alt: "Burger appetitoso su sfondo con dettagli promozionali"
+            alt: ""
           },
           {
             image: "./immagini/cucina.jpg",
             text: "I nostri burger sono arte, i nostri cuochi gli artisti! 👨‍🍳🍔 Scopri la maestria dei nostri chef su BuyBurger: passione, qualità e creatività per burger che lasciano il segno. 🌟 Visita buyburger.com!",
-            alt: "Chef che prepara un burger con ingredienti freschi"
+            alt: ""
           },
           {
             image: "./immagini/furgoncino.jpg",
             text: "Il gusto dei nostri burger arriva direttamente a casa tua! 🚚🍔 Con BuyBurger, spedizioni veloci e garantite per assaporare la qualità ovunque tu sia. Ordina ora su buyburger.com!",
-            alt: "Furgoncino per consegne di burger con logo BuyBurger"
+            alt: ""
           },
           {
             image: "./immagini/prezzi.jpg",
             text: "Qualità al top, prezzi al minimo! 🍔💰 Su BuyBurger trovi i burger più buoni senza spendere una fortuna. Gusto irresistibile, prezzi imbattibili: ordina ora su buyburger.com!",
-            alt: "Cartellino prezzi con burger e offerta speciale"
+            alt: ""
           },
           {
             image: "./immagini/ingredienti.jpg",
             text: "Solo il meglio nei nostri burger! 🥩🍅 Su BuyBurger utilizziamo ingredienti di prima qualità, freschi e selezionati con cura per offrirti un gusto autentico e irresistibile. Scopri la differenza su buyburger.com!",
-            alt: "Ingredienti freschi per burger: carne, pomodori, lattuga"
+            alt: ""
           },
           {
             image: "./immagini/codiceqr.jpg",
             text: "Resta connesso con il mondo di BuyBurger! 🍔📲 Scansiona i nostri codici QR per seguirci sui social e non perderti novità, offerte esclusive e dietro le quinte del nostro gusto unico. 🖤🍟",
-            alt: "Codice QR per accedere ai profili social di BuyBurger"
+            alt: ""
           }
         ]
       };
@@ -652,13 +652,13 @@ const Login = {
         <div class="text-center mb-4 d-flex justify-content-center align-items-center flex-wrap">
             <img 
                 src="./immagini/creailtuopanino.png" 
-                alt="Crea il tuo Panino" 
+                alt="" 
                 class="img-fluid rounded shadow mx-3"
                 style="max-width: 100%; height: 400px;"
             />
             <img 
                 src="./immagini/paninoscomposto.png" 
-                alt="Panino Extra" 
+                alt="" 
                 class="img-fluid rounded shadow mx-3"
                 style="max-width: 100%; height: 400px;"
             />
@@ -844,7 +844,7 @@ const Login = {
   
                     <!-- Immagine -->
                     <td class="align-middle">
-                        <img :src="burger.image" class="img-fluid rounded" alt="Panino"
+                        <img :src="burger.image" class="img-fluid rounded" alt=""
                             style="width: 80px; height: 80px;">
                     </td>
   
